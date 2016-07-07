@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.objectFactory" value="spring" />
+	<package name="struts" extends="struts-default">
+		<action name="AdminAction" class="AdminAction">
+			<result name="success">admin/success.jsp</result>
+			<result name="error">admin/error.jsp</result>
+		</action>
+	</package>
+</struts>    
